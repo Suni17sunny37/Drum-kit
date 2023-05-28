@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+body{
+    background-color: #283149;
+}
+.container .Mainheading{
+    position: absolute;
+    font-size: 5rem;
+    color: #DBEDF3;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 3px 0 #DA0463;
+    top: 30px;
+    left: 37%;
+
+}
+.buttons {
+    display: flex;
+    margin-left: 165px;
+    margin-top: 200px;
+}
+.drum{
+    padding: 40px 50px;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 10px;
+    border: 10px solid #404B69;
+    border: 10px solid #404B69;
+    cursor: pointer;
+    border-width: 10px;
+}
+.w{
+    background-image: url("images/tom1.png");
+}
+.a{
+    background-image: url("images/tom2.png");
+}
+.d{
+    background-image: url("images/tom3.png");
+}
+.f{
+    background-image: url("images/tom4.png");
+}
+.p{
+    background-image: url("images/snare.png");
+}
+.k{
+    background-image: url("images/kick.png");
+}
+.s{
+    background-image: url("images/crash.png");
+}
+#end{
+    position: absolute;
+    top: 650px;
+    left: 700px;
+    font-size: larger;
+    color: #DBEDF3;
+}
+.drum:hover{
+    color: #DBEDF3;
+
+}
+#s:hover{
+    color: #062069;
+}
+.pressed{
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+  
+}

@@ -1,0 +1,56 @@
+
+for(var i=0;i<document.querySelectorAll(".drum").length;i++)
+    document.querySelectorAll(".drum")[i].addEventListener("click",function (){
+        var buttonHtml=this.innerHTML;
+        keyPressed(buttonHtml);
+        buttonAnimation(buttonHtml);
+});
+
+document.addEventListener("keypress",function(event){
+    keyPressed(event.key);
+    buttonAnimation(event.key);
+})
+
+function keyPressed(key){
+        switch (key){
+            case "w":
+                var audio=new Audio("sounds/tom-1.mp3");
+                audio.play();
+                break;
+            case "a":
+                var audio=new Audio("sounds/tom-2.mp3");
+                audio.play();
+                break;
+            case "d":
+                var audio=new Audio("sounds/tom-3.mp3");
+                audio.play();
+                break;
+            case "f":
+                var audio=new Audio("sounds/tom-4.mp3");
+                audio.play();
+                break;
+            case "p":
+                var audio=new Audio("sounds/snare.mp3");
+                audio.play();
+                break;
+            case "k":
+                var audio=new Audio("sounds/kick-bass.mp3");
+                audio.play();
+                break;
+            case "s":
+                var audio=new Audio("sounds/crash.mp3");
+                audio.play();
+                break;
+        }
+
+}
+//Button Annimations
+function buttonAnimation(currentKey){
+    var ab=document.querySelector("."+currentKey);
+    ab.classList.add("pressed");
+    setTimeout(function(){
+        ab.classList.remove("pressed");
+  
+    },100);
+}
+
